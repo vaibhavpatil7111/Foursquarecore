@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  
+
+  <style>
+    /* Navbar Styles */
+    .navbar {
+      /* background: linear-gradient(90deg, #6a11cb, #2575fc); */
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px;
+    }
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #000;
+    }
+    .navbar-brand:hover {
+      color: #112363;
+    }
+    .nav-link {
+      color: #000;
+      font-size: 1.1rem;
+      margin-right: 15px;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #112363;
+    }
+    .dropdown-menu {
+      background-color: #fff;
+      border: #00000046 1px solid;
+    }
+    .dropdown-item {
+      color: #000;
+      transition: background 0.3s;
+    }
+    .dropdown-item:hover {
+      background-color: #112363;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .btn-success {
+      background: #112363;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .btn-success:hover {
+      background: #FAAF04;
+      transform: scale(1.1);
+    }
+    .btn-primary {
+      background: #112363;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .btn-primary:hover {
+      background: #112363;
+      transform: scale(1.1);
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    /* .navbar-toggler-icon {
+      background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28white,%201%29" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    } */
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#"><img src="logo.png" alt="loading-error" class="img-size"></a>
+
+      <!-- Navbar Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item font-desgin">
+            <a class="nav-link active font-desgin" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-desgin" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-desgin" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item font-desgin" href="#web-development">Bookkeeping, Financial Statements <br> & Forecasting</a></li>
+              <li><a class="dropdown-item font-desgin" href="#app-development"> Payroll Services</a></li>
+              <li><a class="dropdown-item font-desgin" href="#marketing">Personal & Corporate Tax Services</a></li>
+              <li><a class="dropdown-item font-desgin" href="#marketing">Business Incorporation Services</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-desgin" href="#contact">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-desgin" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="d-flex">
+          <a href="#enquiry" class="btn btn-success me-2 button-hover">Enquiry</a>
+          <a href="tel:+1234567890" class="btn btn-primary">Call: +123 456 7890</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- Navbar Ends -->
+
+<!-- Banner Section Start-->
+<div class="page-header bg-light py-5 rounded" style="background:linear-gradient(0deg, rgba(12, 12, 12, 0.459), rgba(12, 12, 12, 0.459)), url('pexels-photo-3182834.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+              <!-- Page Header Content -->
+              <h1 class="display-4 text-light">Careers</h1>
+              <nav aria-label="breadcrumb" class="d-inline-block">
+                  <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
+                      <li class="breadcrumb-item"><a href="#" class="text-secondary text-light">Home</a></li>
+                      <li class="breadcrumb-item active text-light" aria-current="page">Careers</li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+ <!-- Banner Section Ends -->
+
+  <!-- Section 1 start -->
+  <section class="fullwidth-box">
+    <div class="container">
+  
+      <div class="row align-items-center">
+        <!-- Left Column -->
+        <div class="col-md-6 mb-4">
+          <div class="separator mb-3"></div>
+          <h2 class="title-heading-left">If you're looking to join a team that feels like family, you've come to the right place.</h2>
+          <div class="fusion-text mt-3">
+            <p>At Four Square Accounting Corp, we take pride in supporting the communities we serve across Canada because we believe life is about more than just work.</p>
+            <p>Our team embraces continuous learning, collaborates with leading global companies and technologies, and makes sure to enjoy the journey along the way.</p>
+            <p>From artists and puzzlers to runners, gamers, and everything in between, our diverse group of employees defines who we are: a skilled and approachable team committed to excellence. On Fridays, you’ll find us in flannel shirts and jeans, sipping tea, and enjoying a quick game of foosball between meetings.</p>
+          </div>
+        </div>
+  
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <img src="Untitled design.webp" 
+               alt="Images of Plato team member" 
+               class="flannel-image">
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Section 1 ENds -->
+   <!-- Section 2  Start -->
+   <div class="container my-4" id="Availability">
+    <div class="rounded overflow-hidden" style="
+        background-image: linear-gradient(180deg, rgba(18,25,33,0.5) 0%, rgba(18,25,33,0.5) 100%), 
+                          url('https://platotech.com/wp-content/uploads/2022/09/Intersection-1-1.svg');
+        background-position: left top; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-color: #121921; 
+        padding: 8vh;
+        border-radius: 59px !important;
+        ">
+        <!-- Separator -->
+        <div class="mb-4" style="max-width: 100px; border-top: 5px solid #CCC;"></div>
+        
+        <!-- Title -->
+        <h2 class="text-light mb-4" style="line-height: 1.2; font-size: 2.5rem;">Current Opportunities</h2>
+        
+        <!-- Content -->
+        <p class="text-light">We’re always looking for new additions to our team!</p>
+        <p class="text-light">With delivery centres in eleven cities across Canada, and clients around the world, we are a global company that’s always looking to hire and train new talent.</p>
+        <p class="text-light">
+            Check out our profile on Career Beacon to see our open job opportunities. If you don’t see anything that fits your skill set, we encourage you to still send along your resume and cover letter to 
+            <a href="mailto:info@foursquarecorp.ca" class="text-info">info@foursquarecorp.ca</a> as we are always looking for new members of our team!
+        </p>
+    </div>
+</div>
+
+   <!-- Section 2  ENds -->
+
+   <!-- Section 3 start -->
+
+
+   <section class="introtext py-5">
+    <div class="container">
+        <!-- Title Section -->
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>HOW CAN AN <span class="text-primary">ACCOUNTANT</span> HELP YOU?</h2>
+                <p class="text-center">
+                    Objectively innovate empowered manufactured products whereas parallel platforms. Holistically predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. Proactively
+                    envisioned multimedia-based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.
+                </p>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row mt-5">
+            <!-- Feature 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center shadow border-0 h-100">
+                    <div class="card-body mb-3">
+                        <div class="icon mb-3">
+                            <i class="typcn typcn-chart-area-outline display-3 text-primary"> <img src="JOIN-BENEFITS-1.jpg" class="icon-size" alt=""></i>
+                        </div>
+                        <h5 class="card-title">FINANCIAL SERVICES</h5>
+                        <p class="card-text">Phosfluorescently engage worldwide methodologies with web-enabled technology.</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center shadow border-0 h-100">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="typcn typcn-chart-area-outline display-3 text-primary"> <img src="JOIN-BENEFITS-2.jpg" class="icon-size" alt=""></i>
+                        </div>
+                        <h5 class="card-title">BUSINESS VALUATION</h5>
+                        <p class="card-text">Completely pursue scalable customer service through sustainable potentialities.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center shadow border-0 h-100">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="typcn typcn-chart-area-outline display-3 text-primary"> <img src="JOIN-BENEFITS-3.jpg" class="icon-size" alt=""></i>
+                        </div>
+                        <h5 class="card-title">SMALL BUSINESS TAXES</h5>
+                        <p class="card-text">Collaboratively administrate turnkey channels and effectively manage virtual e-tailers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center shadow border-0 h-100">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="typcn typcn-chart-area-outline display-3 text-primary"> <img src="JOIN-BENEFITS-4.jpg" class="icon-size" alt=""></i>
+                        </div>
+                        <h5 class="card-title">STARTUP COMPLIANCE</h5>
+                        <p class="card-text">Seamlessly empower fully researched growth strategies and interoperable internal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Section 3 Ends -->
+   
+   <!-- Section 4 Start -->
+   <div class="cta-box py-5" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('pexels-photo-3182834.jpeg'); background-size: cover; background-attachment: fixed; background-position: center;">
+    <div class="container text-white">
+        <div class="row align-items-center">
+            <!-- Title Section -->
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold mb-3">
+                    Looking for a premium accounting <br> for your business?
+                </h2>
+            </div>
+            
+            <!-- Button Section -->
+            <div class="col-lg-4 text-lg-end text-center">
+                <a href="#" class="btn btn-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   <!-- Section 4 Ends -->
+
+
+   <!-- Section 5 Start -->
+   <section style="background-color: #F0F2F5;">
+
+   <div class="container-fluid p-0" style="background-color: var(--awb-color7); background-position: center center; background-repeat: no-repeat;">
+    <div class="row mx-0">
+      <div class="col-12">
+        <div class="text-center pt-5">
+          <h2 class="title-heading-left" style="font-size: 50px; line-height: 1.2;">Our Recruitment Process</h2>
+          <div class="separator" style="border-top: 5px solid var(--awb-color3); max-width: 100px; margin: 0 auto;"></div>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  
+
+
+  <!-- inner section -->
+
+  <!-- <section style="background-color: #F0F2F5;"> -->
+    <div class="container py-5">
+      <div class="main-timeline">
+        <div class="timeline left">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>01. Apply
+              </h3>
+              <p class="mb-0">Submit an up-to-date and tailored resume for each position that you're applying to. Try to keep your resume 1-2 pages and in your cover letter focus on why you’ve applied for the position and what makes you the best fit for the role. Don’t forget to proofread!              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline right">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>02. Review of Application
+              </h3>
+              <p class="mb-0">Once you apply, you will receive an email to confirm that we have received your application. It will go on to be reviewed by Four Square Accounting Core recruiter and the hiring manager and they will pick the top candidates to be screened by the recruiter.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline left">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>03. Interview</h3>
+              <p class="mb-0">The recruiter will reach out to you to have an introductory conversation. If you’re selected from this process you will go on to an interview with the hiring manager. Your references will be contacted and there may be a second technical interview. If you are not moving forward, you will be advised as soon as possible. Please contact our recruiter if you have any questions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline right">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>04. Offer</h3>
+              <p class="mb-0">If you are a successful candidate, we will send you an offer. A client interview may be required as well. Upon successful client interview process and outreach to your references, we will welcome you on board.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline left">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>05. Onboarding</h3>
+              <p class="mb-0">Welcome to FOur Square Accounting Core! After you accept the offer, the recruiter will reach out to confirm your acceptance has been received. Prior to your start date, your new manager will reach out with details about your first day.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="timeline right">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>2007</h3>
+              <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
+                dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- inner sectionends -->
+
+
+   <!-- Section 5 Ends -->
+
+
+
+   <!-- Section 6 Start -->
+   <div class="section pt-5 pb-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Left Column: Contact Information -->
+            <div class="col-xl-4 col-md-12">
+                <div class="d-flex flex-column gap-4 h-100 justify-content-center">
+                    <div>
+                        <span class="text-primary font-2"  style="font-size: 20px; color: #112363 !important;">Contact Us</span>
+                        <h3 class="fw-bold" style="font-size: 40px;">Get In Touch</h3>
+                        <p>Reach out to us for expert support, answers to your questions, or to explore how we can collaborate effectively.</p>
+                    </div>
+                    <div>
+                        <h5>Follow Us On:</h5>
+                        <!-- <div class="d-flex gap-3">
+                            <a href="https://www.facebook.com" class="btn btn-primary rounded-circle">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.twitter.com" class="btn btn-info rounded-circle">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="btn btn-danger rounded-circle">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com" class="btn btn-dark rounded-circle">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div> -->
+                        <div class="d-flex gap-3">
+                          <a href="https://www.facebook.com" class="btn btn-primary btn-hover rounded-circle docs-creator" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                              <i class="fa-brands fa-facebook-f" style="font-size: 20px;"></i>
+                          </a>
+                          <a href="https://www.twitter.com" class="btn btn-info rounded-circle docs-creator" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                              <i class="fa-brands fa-twitter" style="font-size: 20px; color: #fff;"></i>
+                          </a>
+                          <a href="https://www.instagram.com" class="btn btn-danger rounded-circle docs-creator" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                              <i class="fa-brands fa-instagram" style="font-size: 20px;"></i>
+                          </a>
+                          <a href="https://www.youtube.com" class="btn btn-danger rounded-circle docs-creator" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                              <i class="fa-brands fa-youtube" style="font-size: 20px;"></i>
+                          </a>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="col-xl-8 col-md-12">
+                <div class="p-4 rounded shadow bg-white">
+                    <!-- Success Toast -->
+                    <div class="alert alert-success d-none" id="successMsg" role="alert">
+                        <i class="fa-solid fa-check-circle me-2"></i>Your message was sent successfully.
+                    </div>
+
+                    <!-- Error Toast -->
+                    <div class="alert alert-danger d-none" id="errorMsg" role="alert">
+                        <i class="fa-solid fa-exclamation-circle me-2"></i>Something went wrong! Please try again.
+                    </div>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">The field is required.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                <div class="invalid-feedback">The field is required.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                                <div class="invalid-feedback">The field is required.</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-hover w-50">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   <!-- Section 6 Ends -->
+
+   <!-- Footer Start -->
+   <footer class="footer pt-5" style="background-color: #F0F2F5; color: #000;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="logo.png" alt="Logo" class="logo-size mb-3">
+                <p>
+                    Providing reliable financial solutions with integrity, expertise, and a commitment to empowering businesses across Canada.
+                </p>
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center">
+              <h5 class="text-center">Quick Links</h5>
+              <ul class="list-unstyled text-center">
+                  <li><a href="https://www.google.com" class="text-black">Home</a></li>
+                  <li><a href="#" class="text-black">About Us</a></li>
+                  <li><a href="#" class="text-black">Services</a></li>
+                  <li><a href="#" class="text-black">Contact Us</a></li>
+                  <!-- <li><a href="#" class="text-black">FAQ</a></li> -->
+              </ul>
+          </div>
+
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <h5 class="text-center">Services</h5>
+            <ul class="list-unstyled text-center">
+              <li><a href="#" class="text-black">Payroll Services.</a></li>
+                <li><a href="https://www.google.com" class="text-black">Bookkeeping, Financial <br>Statements & Forecasting.</a></li>
+                <li><a href="#" class="text-black">Personal & Corporate Tax Services.</a></li>
+                <li><a href="#" class="text-black">Business Incorporation Services.</a></li>
+                <!-- <li><a href="#" class="text-black">FAQ</a></li> -->
+            </ul>
+        </div>
+          
+        <div class="col-md-3">
+          <h5 class="mb-3">Contact Us</h5>
+          <ul class="list-unstyled">
+              <li class="mb-2">
+                  <a href="mailto:info@foursquarecorp.ca" class="text-black d-flex align-items-center">
+                      <i class="fa-solid fa-envelope me-2"></i>
+                      <span><b>Email</b>: info@foursquarecorp.ca</span>
+                  </a>
+              </li>
+              <li class="mb-2">
+                  <a href="ttel:(778) 899-3442" class="text-black d-flex align-items-center">
+                      <i class="fa-solid fa-phone me-2"></i>
+                      <span><b>Phone</b>: (778) 899-3442</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.google.com/maps?q=8108+156A+St,+Surrey,+BC+V4N+0X6" target="_blank" class="text-black d-flex align-items-start">
+                      <i class="fa-solid fa-location-dot me-2 mt-1"></i>
+                      <span><b>Address</b>: 8108 156A St, Surrey, <br> BC V4N 0X6</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+      
+           
+        </div>
+        <hr style="border-color: #444;">
+        <div class="row">
+          <div class="col-md-12">
+              <p class="text-center">Copyright © 2024 - Four Square Accounting. Powered By Accelon IT Corp</p>
+          </div>
+      </div>
+      
+    </div>
+</footer>
+
+
+
+   <!-- Footer ENds -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

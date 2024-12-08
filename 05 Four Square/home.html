@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand img {
+            height: 50px; /* Adjust logo height */
+        }
+        .btn-orange {
+            background-color: #e34a0a;
+            color: white;
+            border-radius: 20px;
+        }
+        .btn-orange:hover {
+            background-color: #d0410a;
+            color: white;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 500; /* Slightly bolder links */
+        }
+    </style>
+</head>
+<body class="vh-100 overflow-hidden">
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="https://platotech.com/">
+                    <img src="https://platotech.com/wp-content/uploads/2022/08/PLATO-Logo.png" alt="PLATO Logo">
+                </a>
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="https://platotech.com/services/testing-services/">Testing Services</a></li>
+                                <li><a class="dropdown-item" href="https://platotech.com/services/it-business-consulting/">IT &amp; Business Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://platotech.com/training/">Training Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://platotech.com/careers/">Careers</a>
+                        </li>
+                        <!-- About Us Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <li><a class="dropdown-item" href="https://platotech.com/about/leadership-team/">Leadership Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://platotech.com/resources/">Resources</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="btn btn-orange" href="https://platotech.com/work-with-us/">
+                                Work With Us <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
